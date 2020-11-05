@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 public class guessTheNumber {
     public static void main(String[] args) {
-        int v_replay = 0;
+        int v_replay;
         int gameCounter = 0;
 
         do{
@@ -24,7 +24,7 @@ public class guessTheNumber {
         Scanner input = new Scanner(System.in);
         Random randomizer = new Random();
         int randomNumber = randomizer.nextInt(10);
-        int inNumber = -1;
+        int inNumber;
         int replay = -1;
 
         for (int i = 0; i < 3; i++) {
@@ -43,7 +43,7 @@ public class guessTheNumber {
             } else{
                 System.out.println("Вы угадали!");
                 break;
-            };
+            }
             if(i == 2){
                 System.out.println("Попытки закончились.");
             }
