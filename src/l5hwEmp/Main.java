@@ -11,6 +11,7 @@ public class Main {
         empArr[4] = new Employee("Dmitriy Alexeev", "lead Engineer", "aldmitr@mailbox.com", "8923768657", 65000, 44);
 
 
+//        for(int i = 0; i < empArr.length; i++){
         for (Employee employee : empArr) {
             if (employee.getAge() > 40) {
                 employee.printEmployeeInfo();
