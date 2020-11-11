@@ -23,12 +23,12 @@ public class Employee {
 
 
     void printEmployeeInfo(){
-        System.out.println("===================================");
         System.out.println("ФИО: " + name);
         System.out.println("Должность: " + position);
         System.out.println("Адрес электронной почты: " + email);
         System.out.println("Номер телефона: " + phoneNumber);
         System.out.println("Зароботная плата: " + salary);
         System.out.println("Возраст: " + age);
+        System.out.println("===================================");
     }
 }
