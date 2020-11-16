@@ -35,7 +35,7 @@ public class animal {
     }
 
 
-    void running(int distance){
+    void run(int distance){
         if (distance <= runningDistance){
             System.out.println(name +" бежит "+ distance +" метров!");
         } else {
@@ -43,7 +43,7 @@ public class animal {
         }
     }
 
-    void jumping(int Height){
+    void jump(int Height){
         if (Height <= jumpHeight){
             System.out.println(name +" прыгнул на "+ Height +" сантиметров!");
         } else {
@@ -51,7 +51,7 @@ public class animal {
         }
     }
 
-    void swimming(int distance){
+    void swim(int distance){
         if (swimmingDistance <= jumpHeight){
             System.out.println(name +" проплыл "+ distance +" метров!");
         } else {
