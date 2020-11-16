@@ -3,6 +3,7 @@ package l5;
 public class animal {
 
     private String name;
+
     private int runningDistance;
     private int jumpHeight;
     private int swimmingDistance;
@@ -11,10 +12,25 @@ public class animal {
         return name;
     }
 
+    public int getRunningDistance() {
+        return runningDistance;
+    }
+
+    public int getJumpHeight() {
+        return jumpHeight;
+    }
+
+    public int getSwimmingDistance() {
+        return swimmingDistance;
+    }
+
+    support.randomGen statsRandomazer = new support.randomGen();
+
     public animal(String name, int runningDistance, int jumpHeight, int swimmingDistance) {
         this.name = name;
-        this.runningDistance = runningDistance;
-        this.jumpHeight = jumpHeight;
+        //коэффициент рандома можно было вынести в конструктор класса, но было уже лень:)
+        this.runningDistance = statsRandomazer.getRundomNum(runningDistance*8/10,runningDistance*12/10);
+        this.jumpHeight = statsRandomazer.getRundomNum(jumpHeight*8/10,jumpHeight*12/10);
         this.swimmingDistance = swimmingDistance;
     }
 
